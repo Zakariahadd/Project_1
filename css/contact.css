@@ -1,0 +1,83 @@
+/* Contact Section */
+.contact{
+    text-align: center;
+}
+
+.contact-options{
+    overflow: hidden;
+}
+.contact-options .option{
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+.contact-options .option .icon{
+    color: var(--maincolor);
+    margin-bottom: 15px;
+}
+
+.contact-options .option-title{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.contact-options .option-desk{
+    color: #999;
+}
+
+.contact-options .option.mg{
+    margin: 0 5%;
+}
+
+.contact-form{
+    width: 50%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.contact-form .area{
+    margin-bottom: 20px;
+    font: inherit;
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    background: rgb(231, 231, 231);
+    outline: none;
+}
+
+.contact-form .area:focus{
+    border:1px solid var(--maincolor);
+    border-bottom: 3px solid var(--maincolor);
+}
+
+.contact-form .area.mg{
+    margin-right: 1%;
+}
+
+.contact-form .nombre, .correo{
+    width: 49%;
+}
+
+.contact-form .mensaje, .asunto{
+    width: 100%;
+}
+
+.contact-form .nombre, .correo, .asunto{
+    height: 40px;
+}
+
+.contact-form .mensaje{
+    height: 80px;
+}
+
+.contact .enviar{
+    background: var(--maincolor);
+    color: var(--whitecolor);
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}

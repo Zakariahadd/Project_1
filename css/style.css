@@ -1,0 +1,144 @@
+/*
+
+    1-Common Styles
+    2-General Styles
+    3- Sections
+        3.0 Header Section
+        3.1 Home Section
+        3.2 About Section
+        3.3 Portfolio Section
+        3.4 Service Section
+        3.5 Prices Section
+        3.6 Team Section
+        3.7 Blog Section
+        3.8 Contact Section
+        3.9 Footer Section
+*/
+
+
+
+
+
+/* 1- Comon */
+    /* 
+    
+        - overlay
+        - opacity hover
+        - section header
+        - section padding
+        - hover effect 1 ( left to right )
+        - hover effect 2 ( top to bottom °
+    
+    
+    */
+.overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity{
+    transition: opacity .5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+.ltr-effect,
+.tb-effect{
+    position: relative;
+}
+
+.ltr-effect::after,
+.tb-effect::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+.ltr-effect::after{
+    width: 0;
+    transition: width 0.5s;
+}
+
+.tb-effect::after{
+    height: 0;
+    transition: height 0.5s;
+}
+
+.ltr-effect:hover:after{
+    width: 100%;
+}
+
+
+.tb-effect:hover:after{
+    height: 100%;
+}
+
+/* 2- General Css Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* css3 */
+}
+
+:root{
+    --maincolor : #6195ff;
+    --graycolor : #999;
+    --whitecolor : #fff;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    font-family: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pd-y{
+    padding: 120px;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header .section-title{
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.section-header .line{
+    display: block;
+    margin: 0 auto 70px auto;
+    height: 5px;
+    width: 50px;
+    background-color: var(--maincolor);
+}

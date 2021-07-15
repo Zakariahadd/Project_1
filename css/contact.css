@@ -44,7 +44,7 @@
     border: none;
     background: rgb(231, 231, 231);
     outline: none;
-    transition: all 0.5s;
+    transition: border 1s;
 }
 
 .contact-form .area:focus{
